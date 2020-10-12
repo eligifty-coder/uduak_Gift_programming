@@ -1,12 +1,6 @@
 // reverse
 const reverseFun = (data) => {
-	let reverserArr = [];
-	let datalength = data.length;
-	for (let i = 0; i < datalength; i++) {
-		let poppedItem = data.pop();
-		reverserArr.push(poppedItem);
-	}
-	return reverserArr;
+	return data.map((item,index,array)=>array[array.length-1-index])
 };
 // multiply by 5
 const multiplyByFiveFunc = (data) => data.map((item) => item * 5);
