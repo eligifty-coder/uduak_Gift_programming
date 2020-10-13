@@ -1,7 +1,6 @@
 // reverse
-const reverseFun = (data) => {
-	return data.map((item,index,array)=>array[array.length-1-index])
-};
+const reverseFun = (data) =>  data.map((item,index,array)=>array[array.length-1-index])
+
 // multiply by 5
 const multiplyByFiveFunc = (data) => data.map((item) => item * 5);
 // replace negative item with zero
